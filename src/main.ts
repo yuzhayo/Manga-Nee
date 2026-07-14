@@ -10,6 +10,7 @@ function createWindow(): void {
         height: 800,
         minWidth: 800,
         minHeight: 600,
+        autoHideMenuBar: true,
         backgroundColor: '#0f0f1a',
         webPreferences: {
             preload: path.join(currentDirectory, '../preload/preload.mjs'),
