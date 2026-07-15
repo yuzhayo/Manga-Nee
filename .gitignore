@@ -9,3 +9,5 @@ dist/
 .vscode/
 .idea/
 .DS_Store
+OpenPowerShellAdmin.bat
+local

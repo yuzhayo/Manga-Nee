@@ -1,13 +1,23 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
-export const theme = responsiveFontSizes(createTheme({
-    palette: {
-        mode: 'dark',
-        primary: { main: '#5b74ef' },
-        secondary: { main: '#efd65b' },
-        background: {
-            default: '#0f0f1a',
-            paper: '#171722',
+export const theme = responsiveFontSizes(
+    createTheme({
+        cssVariables: {
+            colorSchemeSelector: 'class',
         },
-    },
-}));
+        colorSchemes: {
+            light: {
+                palette: {
+                    primary: { main: '#5b74ef' },
+                    secondary: { main: '#efd65b' },
+                },
+            },
+            dark: {
+                palette: {
+                    primary: { main: '#5b74ef' },
+                    secondary: { main: '#efd65b' },
+                },
+            },
+        },
+    }),
+);
